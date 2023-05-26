@@ -1,0 +1,10 @@
+version: "3"
+services:
+  jatinmaincourseservercontainer:
+    image: jatin-main-course-server-image-new
+    restart: always
+    stdin_open: true
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/app/
